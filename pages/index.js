@@ -24,7 +24,7 @@ export default function Home({ data }) {
         <p className="text-green-600">This is a red text</p>
       </main>
 
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }

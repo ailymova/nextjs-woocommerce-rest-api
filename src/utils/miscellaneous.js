@@ -5,9 +5,8 @@ import DOMPurify from 'dompurify';
  *
  * @param {string} content Plain or html string.
  *
- * @returns {string} Sanitaize string
+ * @return {string} Sanitized string
  */
-
 export const sanitize = content => {
-  return typeof window ? DOMPurify.sanitize(content) : content;
+  return process.browser ? DOMPurify.sanitize(content) : content;
 };
