@@ -46,4 +46,13 @@
 2. ✅ Make dynamic Footer Menu, copyright text & social links
 
 ## Video - Part 10
+
+Note: Check if I can replace this creating the endpoint from wp custom endpoints
+
+1. Create API key from WooCommerce Settings
+2. Install WooCommerce REST API - Javascript Library on my NextJS package.json
+3. Create get-products.js inside Next's api & create api endpoint that return products
+4. Add query parameters option to request products per page
+
+## Video - Part 11
 1. 
