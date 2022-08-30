@@ -2,7 +2,7 @@
 
 1. Install WP
 2. Create Next JS App
-3.
+3. Clear boilerplate from Next
 
 ## Video - Part 3
 1. ✅ Create Menus inside WP for Header & Footer
@@ -49,10 +49,14 @@
 
 Note: Check if I can replace this creating the endpoint from wp custom endpoints
 
-1. Create API key from WooCommerce Settings
-2. Install WooCommerce REST API - Javascript Library on my NextJS package.json
-3. Create get-products.js inside Next's api & create api endpoint that return products
-4. Add query parameters option to request products per page
+1. ✅ Create API key from WooCommerce Settings
+2. ✅ Install WooCommerce REST API - Javascript Library on my NextJS package.json
+3. ✅ Create get-products.js inside Next's api & create api endpoint that return products
+4. ✅ Add query parameters option to request products per page
 
 ## Video - Part 11
-1. 
+1. Fix the getStaticProps to also fetch products after Header & Footer
+2. Pass product prop to Products component
+3. Loop porducts to create grid
+
+## Video - Part 12
