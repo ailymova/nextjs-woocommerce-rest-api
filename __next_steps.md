@@ -60,3 +60,22 @@ Note: Check if I can replace this creating the endpoint from wp custom endpoints
 3. Loop porducts to create grid
 
 ## Video - Part 12
+1. Create the image component inside the components folder
+2. Review image component implementations
+
+## Video - Part 13
+1. Add the image to the product component
+2. Fix 'Invalid src prop' error by:
+    - Adding the hostname of the images src to next.config.js
+
+## Video - Part 14
+1. Added price from price_html product data to product component
+
+## Video - Part 15
+1. Fix dangeroulySetHTML Error in the footer
+    - Set state of isMounted with initial state to false
+    - Set useEffect to change isMounted to true as soon as the component renders
+    - Render the 2 widgets causing the error if isMounted is true
+
+## Video - Part 16
+1.
