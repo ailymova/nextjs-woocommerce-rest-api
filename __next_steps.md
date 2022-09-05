@@ -81,20 +81,22 @@ Note: Check if I can replace this creating the endpoint from wp custom endpoints
 1. ✅ Check the endpoints for the cart functionality that the  Headless CMS plugin provides
 
 ## Video - Part 17
-1. Move product markup to product component file & replace it on products/index
-2. Create add-to-cart component in component/cart
-3. Add button markup inside add-to-cart component
-4. Create utils/cart folder and add index.js & add the addToCart function...
+1. ✅ Move product markup to product component file & replace it on products/index
+2. ✅ Create add-to-cart component in component/cart
+3. ✅ Add button markup inside add-to-cart component
+4. ✅ Create utils/cart folder and add index.js & add the addToCart function...
 
 ## Video - Part 18
 Note: The video is the same as part 17.
 
 ## Video - Part 19
-1. Add functions for set & get localStorage - utils/cart/session.js
-2. Add function to set header for the request - utils/cart/api.js
+1. ✅ Add functions for set & get localStorage - utils/cart/session.js
+2. ✅ Add function to set header for the request - utils/cart/api.js
 
 ## Video - Part 20
-1. Review code
+1. ✅ Review code
 Note: Fix mixed content adding an exception on Firefox
 
 ## Video - Part 21
+1. Add padding to container class of tailwind inside tailwind.config.js
+
