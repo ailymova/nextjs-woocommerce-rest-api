@@ -98,5 +98,7 @@ Note: The video is the same as part 17.
 Note: Fix mixed content adding an exception on Firefox
 
 ## Video - Part 21
-1. Add padding to container class of tailwind inside tailwind.config.js
+1. ✅ Add padding to container class of tailwind inside tailwind.config.js
+
+## Video - Part 22
 
