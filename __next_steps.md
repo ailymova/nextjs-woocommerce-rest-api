@@ -101,4 +101,15 @@ Note: Fix mixed content adding an exception on Firefox
 1. ✅ Add padding to container class of tailwind inside tailwind.config.js
 
 ## Video - Part 22
+1. Create component/context dir
+2. Create component AppProvider inside index.js @ previous directory
 
+## Video - Part 23
+1. Move Header & Footer to Layout component and this will render childrens
+2. Change pages/index.js Header & Footer to Layout component
+3. Wrap layout component with the AppProvider
+4. Change Add to Cart component to use the context & get cart & setCart from it
+5. Create state (useState) for isLoading & isAddedToCart 
+6. Pass this states & setCart function as prop to Cart Function on utils folder
+
+## Video - Part 24

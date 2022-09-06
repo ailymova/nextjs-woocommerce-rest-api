@@ -9,11 +9,16 @@ import { getSession, storeSession } from './session';
  *
  * @param {int} productId Product Id.
  * @param {int} qty Product Quantity.
+ * @param {Function} setCart
+ * @param {Function} setIsAddedToCart
+ * @param {Function} setLoading
  */
 
-export const addToCart = (productId, qty = 1) => {
+export const addToCart = (productId, qty = 1, setCart, setIsAddedToCart, setLoading) => {
   const storedSession = getSession();
   const addOrViewCartConfig = getAddOrViewCartConfig();
+
+  setLoading(true);
 
   axios
     .post(
@@ -28,9 +33,12 @@ export const addToCart = (productId, qty = 1) => {
       if (isEmpty(storedSession)) {
         storeSession(res?.headers?.['x-wc-session']);
       }
-      viewCart();
+      setIsAddedToCart(true);
+      setLoading(false);
+      viewCart(setCart);
     })
     .catch(err => {
+      setLoading(false);
       console.log('err', err);
     });
 };
@@ -38,7 +46,7 @@ export const addToCart = (productId, qty = 1) => {
 /**
  * View Cart Request Handler
  */
-export const viewCart = () => {
+export const viewCart = setCart => {
   const addOrViewCartConfig = getAddOrViewCartConfig();
 
   axios
