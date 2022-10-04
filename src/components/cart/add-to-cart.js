@@ -1,5 +1,5 @@
 import { isEmpty } from 'lodash';
-import { useContext, useState } from 'react/cjs/react.production.min';
+import { useContext, useState } from 'react';
 import { addToCart } from '../../utils/cart';
 import { AppContext } from '../context';
 import cx from 'classnames';
