@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import { addToCart } from '../../utils/cart';
 import { AppContext } from '../context';
 import cx from 'classnames';
+import Link from 'next/link';
 
 const AddToCart = ({ product }) => {
   const [cart, setCart] = useContext(AppContext);
@@ -18,12 +19,21 @@ const AddToCart = ({ product }) => {
   }
 
   return (
-    <button
-      className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-      onClick={() => addToCart(product?.id ?? 0, 1, setCart, setIsAddedToCart, setLoading)}
-      disabled={loading}>
-      {loading ? 'Adding...' : 'Add to cart'}
-    </button>
+    <>
+      <button
+        className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+        onClick={() => addToCart(product?.id ?? 0, 1, setCart, setIsAddedToCart, setLoading)}
+        disabled={loading}>
+        {loading ? 'Adding...' : 'Add to cart'}
+      </button>
+      {isAddedToCart && !loading ? (
+        <Link href="/cart">
+          <a className="bg-white hover:bg-gray-100 text-gray-800 font-semibold ml-4 py-11px px-4 border border-gray-400 rounded shadow">View cart</a>
+        </Link>
+      ) : (
+        ''
+      )}
+    </>
   );
 };
 

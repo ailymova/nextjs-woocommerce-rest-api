@@ -113,3 +113,9 @@ Note: Fix mixed content adding an exception on Firefox
 6. Pass this states & setCart function as prop to Cart Function on utils folder
 
 ## Video - Part 24
+1. Create a function in utils/cart/index.js to calculate Total Qty and Price
+2. Create a function that formats the cart data
+3. Format data of the request inside ViewCart func & pass it into SetCart to local storage
+4. Add View Cart btn to cart/add-to-cart.js after the item has been added
+5. Create cart in pages dir
+

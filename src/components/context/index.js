@@ -14,6 +14,7 @@ export const AppProvider = props => {
     if (process.browser) {
       let cartData = localStorage.getItem('next-cart');
       cartData = null !== cartData ? JSON.parse(cartData) : '';
+      console.log('cartData', cartData);
       setCart(cartData);
     }
   }, []);

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { isEmpty } from 'lodash';
+import { isArray, isEmpty } from 'lodash';
 import { CART_ENDPOINT } from '../constants/endpoints';
 import { getAddOrViewCartConfig } from './api';
 import { getSession, storeSession } from './session';
@@ -52,9 +52,48 @@ export const viewCart = setCart => {
   axios
     .get(CART_ENDPOINT, addOrViewCartConfig)
     .then(res => {
-      console.log('res', res);
+      const formattedCartData = getFormattedCartData(res?.data ?? []);
+      setCart(formattedCartData);
     })
     .catch(err => {
       console.log('err', err);
     });
+};
+
+/**
+ * Calculate Cart Qty and Price
+ *
+ * @param cartItems
+ * @return {{totalQty: number, totalPrice: number}}
+ */
+const calculateCartQtyAndPrice = cartItems => {
+  const qtyAndPrice = {
+    totalQty: 0,
+    totalPrice: 0,
+  };
+
+  if (!isArray(cartItems) || !cartItems?.length) {
+    return qtyAndPrice;
+  }
+
+  cartItems.forEach((item, index) => {
+    qtyAndPrice.totalQty += item?.quantity ?? 0;
+    qtyAndPrice.totalPrice += item?.line_total ?? 0;
+  });
+
+  return qtyAndPrice;
+};
+
+/**
+ * Get Formatted cart data
+ *
+ * @param cartData
+ * @return {null | {cartTotal:{totalQty: number, totalPrice: number},cartItems({length}|*|*[])}}
+ */
+const getFormattedCartData = cartData => {
+  if (!cartData.length) {
+    return null;
+  }
+  const cartTotal = calculateCartQtyAndPrice(cartData || []);
+  return { cartItems: cartData || [], ...cartTotal };
 };
