@@ -119,3 +119,8 @@ Note: Fix mixed content adding an exception on Firefox
 4. Add View Cart btn to cart/add-to-cart.js after the item has been added
 5. Create cart in pages dir
 
+## Video - Part 25
+1. Add Context to consume inside Header component
+2. Get the cart value and display it on the header inside the bag icon
+
+## Video - Part 26
