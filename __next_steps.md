@@ -124,3 +124,8 @@ Note: Fix mixed content adding an exception on Firefox
 2. Get the cart value and display it on the header inside the bag icon
 
 ## Video - Part 26
+1. Download Google font from https://google-webfonts-helper.herokuapp.com/
+2. Create a font dir and fonts.scss importing fonts and adding the import to styles/index.scss
+3. Check if it works
+
+## Video - Part 27
