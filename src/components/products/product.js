@@ -17,7 +17,7 @@ const Product = ({ product }) => {
       <Link href={product?.permalink ?? '/'}>
         <a>
           <Image sourceUrl={img?.src ?? ''} altText={img?.alt} title={product?.name ?? ''} layout="fill" containerClassNames="w-full h-80" />
-          <h3 className="font-bold uppercase">{product?.name ?? ''}</h3>
+          <h3 className="font-lato-bold uppercase">{product?.name ?? ''}</h3>
           <div dangerouslySetInnerHTML={{ __html: sanitize(product?.price_html ?? '') }} />
         </a>
       </Link>

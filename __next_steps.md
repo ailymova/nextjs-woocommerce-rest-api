@@ -129,3 +129,6 @@ Note: Fix mixed content adding an exception on Firefox
 3. Check if it works
 
 ## Video - Part 27
+
+
+## Video - Part 28
