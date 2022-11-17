@@ -129,3 +129,8 @@ Note: Fix mixed content adding an exception on Firefox
 3. Check if it works
 
 ## Video - Part 27
+1. Add tailwind.config extend
+2. create _typography.scss inside styles/01-settings and add base styles
+3. create elements/_list.scss & layouts/_footer.scss inside styles/03-components and add styles
+
+## Video - Part 28

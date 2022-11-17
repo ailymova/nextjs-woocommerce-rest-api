@@ -1,37 +1,36 @@
 @layer base {
-	body {
-		@apply bg-white text-brand-platinum-black text-base overflow-x-hidden font-lato;
-	}
+    body {
+        @apply bg-white text-brand-platinum-black text-base font-lato;
+    }
 
-	h1 {
-		@apply font-lato-heavy tracking-0.5px;
-	}
+    h1 {
+        @apply font-lato-heavy tracking-0.5px;
+    }
 
-	p {
-		@apply text-base mb-3 leading-24px;
+    p {
+        @apply text-base mb-3 leading-24px;
 
-		@screen lg {
-			@apply text-18px mb-5 leading-1.6;
-		}
-	}
+        @screen lg {
+            @apply text-18px mb-5 leading-1.6;
+        }
+    }
 
-	ul {
-		@apply mb-5;
+    ul {
+        @apply mb-5;
 
-		li {
-			@apply ml-4 mb-2 leading-28px;
+        li {
+            @apply ml-4 mb-2 leading-28px;
 
-			&::before {
-				content: "\2022";
-				@apply font-bold inline-block -ml-4 w-4;
-				//color: inherit;
-			}
-		}
-	}
+            &::before {
+                content: "\2022";
+                @apply font-bold inline-block -ml-4 w-4;
+                //color: inherit;
+            }
+        }
+    }
 }
 
 // Mobile screen.
-
 h1 {
 	@apply text-32px mb-5 leading-40px;
 }
