@@ -134,3 +134,17 @@ Note: Fix mixed content adding an exception on Firefox
 3. create elements/_list.scss & layouts/_footer.scss inside styles/03-components and add styles
 
 ## Video - Part 28
+1. Add header & Footer to cart page and create new cart component
+2. create cart-items-container.js inside component/cart
+3. create cart-item component inside coponent/cart
+
+## Video - Part 29
+1. Review of the cart endpoints of the rest api
+
+## Video - Part 30
+1. Rename a funct inside src/utils/cart/api & its usage on utils/cart/index.js
+2. Add setProcessing props funct to ViewCart inside utils/cart/index.js
+3. Add updateCart function inside utils/cart/index.js
+
+## Video - Part 31
+1. Fix Update & delete endpoints url

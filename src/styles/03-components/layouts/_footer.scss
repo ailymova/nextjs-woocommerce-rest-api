@@ -1,5 +1,9 @@
 .footer {
     li {
      //   @apply no-dot-list;
+     @apply ml-0;
+        &::before {
+            @apply hidden;
+        }
     }
 }

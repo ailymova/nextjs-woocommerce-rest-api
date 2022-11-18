@@ -1,7 +1,7 @@
-import { isEmpty } from 'lodash';
 import { getSession } from './session';
+import { isEmpty } from 'lodash';
 
-export const getAddOrViewCartConfig = () => {
+export const getApiCartConfig = () => {
   const config = {
     headers: {
       'X-Headless-CMS': true,
