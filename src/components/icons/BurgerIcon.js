@@ -1,5 +1,4 @@
 import * as React from "react";
-
 const SvgBurgerIcon = (props) => (
   <svg
     className="burger-icon_svg__fill-current burger-icon_svg__h-3 burger-icon_svg__w-3"
@@ -10,5 +9,4 @@ const SvgBurgerIcon = (props) => (
     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
   </svg>
 );
-
 export default SvgBurgerIcon;

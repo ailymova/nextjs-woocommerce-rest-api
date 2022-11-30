@@ -155,4 +155,27 @@ Note: Fix mixed content adding an exception on Firefox
 3. Update Headless CMS Plugin on WP
 4. Create Endpoint on constants/endpoints.js of the Countries & States request
 
-## Video - Part 33
+## Video - Part 33 & 34
+1. Destructure countriesData info & create initialState var on checkout-form
+2. Create default customer data
+3. Add all states & context to the checkout-form & handleFormSubmit function
+4. Begin to build the form in the component
+5. Create form-elements components (abbr & input-field)
+6. Create user-address component
+
+## Video - Part 35
+1. Create country-selection component and add it to the user-address
+2. create the handle functions of the inputs in user-address
+
+## Video - Part 36
+1. Create state-selection component and add it to the user-address
+2. Add checkbox component and add it to checkout-form
+3. Add the Address component to the billing inside the checkout-form
+
+## Video - Part 37
+1. Create your-order component and add it to checkout-form with cart data
+2. Create payment-modes component and add it to checkout-form with props
+3. Add Create order button to checkout-form
+4. Add Loading under button with states already created 
+
+## Video - Part 38
