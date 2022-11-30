@@ -17,6 +17,7 @@ const nextConfig = {
   images: {
     domains: [allowedImageWPDomain, 'via.placeholder.com'],
   },
+  swcMinify: false, // it should be false by default
 };
 
 module.exports = nextConfig;

@@ -148,3 +148,11 @@ Note: Fix mixed content adding an exception on Firefox
 
 ## Video - Part 31
 1. Fix Update & delete endpoints url
+
+## Video - Part 32
+1. Update React, react-dom & Next@12 and npm update --save to update to latest packages
+2. Create checkout page and checkout component
+3. Update Headless CMS Plugin on WP
+4. Create Endpoint on constants/endpoints.js of the Countries & States request
+
+## Video - Part 33

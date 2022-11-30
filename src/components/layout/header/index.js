@@ -26,14 +26,14 @@ const Header = ({ header }) => {
             <div className="flex items-center flex-shrink-0 text-black mr-20">
               <Link href="/">
                 {siteLogoUrl ? (
-                  <a>
+                  
                     <img className="mr-3" src={siteLogoUrl} alt={`${siteTitle} Logo`} width="100" />
-                  </a>
+                  
                 ) : (
-                  <a className="font-thin">
+                  <span className="font-thin">
                     {siteTitle || 'WooNext'}
                     {siteDescription ? <span className="text-sm"> - {siteDescription}</span> : null}
-                  </a>
+                  </span>
                 )}
               </Link>
             </div>
@@ -49,7 +49,7 @@ const Header = ({ header }) => {
                 {!isEmpty(headerMenuItems) && headerMenuItems.length
                   ? headerMenuItems.map(menuItem => (
                       <Link key={menuItem?.ID} href={menuItem?.url || '/'}>
-                        <a
+                        <span
                           className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                           dangerouslySetInnerHTML={{ __html: menuItem.title }}
                         />
@@ -71,12 +71,12 @@ const Header = ({ header }) => {
                   </span>
                 </a>
                 <Link href="/cart">
-                  <a className="flex mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10">
+                  <span className="flex mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10">
                     <span className="flex flex-row items-center lg:flex-col">
                       <Bag className="mr-1 lg:mr-0" />
                       <span className="ml-1">Bag{cart?.totalQty ? `(${cart?.totalQty})` : null}</span>
                     </span>
-                  </a>
+                  </span>
                 </Link>
               </div>
             </div>

@@ -73,7 +73,7 @@ export const updateCart = (cartKey, qty = 1, setCart, setUpdatingProduct) => {
 
   axios
     .put(
-      `${CART_ENDPOINT}/${cartKey}`,
+      `${CART_ENDPOINT}${cartKey}`,
       {
         quantity: qty,
       },
@@ -106,7 +106,7 @@ export const deleteCartItem = (cartKey, setCart, setRemovingProduct) => {
   setRemovingProduct(true);
 
   axios
-    .delete(`${CART_ENDPOINT}/${cartKey}`, addOrViewCartConfig)
+    .delete(`${CART_ENDPOINT}${cartKey}`, addOrViewCartConfig)
     .then(res => {
       viewCart(setCart, setRemovingProduct);
     })
